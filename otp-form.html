@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h3>Dear, <span id="name">
+        </h3>
+        <p>Thank you for your inquiry. A 4 digit verification number has been sent to your phone number: <span id="number">, please enter in the following box and submit for confirmation: </p>
+        <input type="hidden" id="otp1">
+        <input type="text" id="otp" maxlength="4" name="otps" onkeypress="return isNumber(event)">
+        <br>
+        <input type="button" id="myButton" value="Verify OTP">
+      </div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script src="js/otpValidation.js">
+     
+    </script>
+  </body>
+</html>
